@@ -29,7 +29,7 @@
         </div>
     </div>
 </div>
-<!------------------about--------------->
+<!------------------apropos--------------->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -96,6 +96,14 @@
             </div>
             <div class="contact-right">
                 <form name='row g-3' action="https://formsubmit.co/s.alcinous@rt-iut.re" method="POST"> 
+                    <!--Honeypot-->
+                    <input type="text" name="honey" style="display: none;">
+
+                    <!--Désactiver Captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_next" value="https://djaydjaythemalbar.github.io/Sandjay-Alcinous/messagerecu.html">
+
                     <input type="text" name="Name" placeholder="Votre Nom" required>
                     <input type="email" name="Email" placeholder="Votre Email" required>
                     <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
